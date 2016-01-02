@@ -1,0 +1,16 @@
+
+collections:
+
+defaults:
+-
+    scope:
+      path: "" 
+    values:
+      description: "Clusters made easy!"
+      keywords: "clusters, big data, data science, hadoop, spark, deployment, provisioning, learn"
+      layout: "default"
+      base_url: "http://bigboards.io"
+      author: "BigBoards"
+      twitter: "@bigboardsio"
+      twitter_card: "summary"
+      locale: "en_US"
