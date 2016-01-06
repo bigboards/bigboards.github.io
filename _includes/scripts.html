@@ -11,5 +11,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
 {% endif %}
 
+<!-- Collections is not Jekyll's best feature -->
+{% for c in site.collections %}
+    {% if c[0] == 'js' %}
+        <!-- {{ c[0] }} processing -->
+        <!-- BigBoards scripts -->
+        {% for s in c[1].files %}
+            <script src="{{ s.path | remove_first:'_' }}"></script>
+        {% endfor %}
+    {% else %}
+        <!-- {{ c[0] }} skipping -->
+    {% endif %}
+{% endfor %}
 
-<script src="/js/bigboards.js"></script>

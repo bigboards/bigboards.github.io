@@ -1,3 +1,12 @@
+.footer {
+    padding-top: 95px;
+    padding-bottom: 95px;
+
+    /* TODO Should be styled with angular-material? */
+    background-color: #545454;
+    color: #FFFFFF
+}
+
 a {
     color: #00aaaa;
     outline: none;
@@ -75,10 +84,11 @@ a:focus {
     margin-top: 0;
 }
 
-.section {
-    layout: "row";
+.list-inline.social-links > .social-button > .social-icon {
+    font-size: 14px;
+    height: 14px;
 }
-.section .container {
-    flex-gt-sm: 75;
-    layout: "row";
+
+.padding {
+    padding: 0 !important
 }

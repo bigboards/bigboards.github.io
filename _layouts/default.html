@@ -5,15 +5,17 @@
 
 <body layout="column" ng-app="bigboards" ng-controller="bigboardsController">
 
-    {% include nav.html %}
-    
-    <md-content>
-        {{ content }}
-    </md-content>
-    
-    {% include scripts.html %}
 
-    {% include footer.html %}
+    <md-content>
+        {% include nav.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+    </md-content>
+
+
+    {% include scripts.html %}
 
 </body>
 

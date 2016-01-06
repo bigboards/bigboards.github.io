@@ -22,13 +22,20 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" type="text/css" href="/style/linear-font.css">
+    <!-- Collections is not Jekyll's best feature -->
+    {% for c in site.collections %}
+        {% if c[0] == 'style' %}
+            <!-- {{ c[0] }} processing -->
+            <!-- BigBoards style -->
+            {% for s in c[1].files %}
+                <link rel="stylesheet" type="text/css" href="{{ s.path | remove_first:'_' }} ">
+            {% endfor %}
+        {% else %}
+            <!-- {{ c[0] }} skipping -->
+        {% endif %}
+    {% endfor %}
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="/style/layout.css">
-    <link rel="stylesheet" type="text/css" href="/style/style.css">
-
+    <!-- Angular style -->
     {% if jekyll.environment == "offline" %}
         <!-- add support for offline development; just run `JEKYLL_ENV=offline jekyll serve`-->
         <link rel="stylesheet" type="text/css" href="/bower_components/roboto-fontface/css/roboto-fontface.css">
