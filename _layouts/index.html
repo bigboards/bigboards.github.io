@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body layout="column" ng-app="bigboards" ng-controller="BigboardsController as bigboards">
+
+
+<md-content>
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+</md-content>
+
+
+{% include scripts.html %}
+
+</body>
+
+</html>

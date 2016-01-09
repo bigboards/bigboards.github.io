@@ -29,6 +29,7 @@
   ],
   "dependencies": {
     "angular-material": "~1.0.0",
-    "roboto-fontface": "~0.4.3"
+    "roboto-fontface": "~0.4.3",
+    "angular-route": "~1.4.8"
   }
 }
