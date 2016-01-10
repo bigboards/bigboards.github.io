@@ -8,13 +8,13 @@
 }
 
 a {
-    color: #00aaaa;
+    /* color: #00aaaa; */
     outline: none;
     text-decoration: none;
 }
 a:hover,
 a:focus {
-    color: #00aaaa;
+    /*color: #00aaaa;*/
     outline: none;
     text-decoration: none;
 }

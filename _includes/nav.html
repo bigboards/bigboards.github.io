@@ -1,32 +1,18 @@
-<section class="nav margin" layout="row" layout-align="center stretch" style="position: fixed; top: 0px; right: 0px; left: 0px">
-    <div class="container margin" layout="column" flex-gt-sm="100" layout-align="stretch center">
-        <div class="row margin" layout="row" layout-align="stretch center" layout-margin>
-            <md-fab-toolbar class="menu margin" flex md-open="false" md-direction="left">
-                <md-fab-trigger class="align-with-text">
-                    <md-button class="md-fab md-primary" aria-label="menu">
-                        <md-icon class="lnr" md-font-icon="lnr-menu" style="font-size: 32px; height: 32px"></md-icon>
-                    </md-button>
-                </md-fab-trigger>
-
-                <md-toolbar class="transparent">
-                    <md-fab-actions class="md-toolbar-tools">
-                        <!--<md-fab-actions class="md-toolbar-tools margin padding">-->
-                        <!--<md-button class="md-fab md-primary" aria-label="close menu">-->
-                            <!--<md-icon class="lnr lnr-32" md-font-icon="lnr-cross" style="font-size: 32px; height: 32px"></md-icon>-->
-                        <!--</md-button>-->
-                        <md-button class="md-icon-button" aria-label="close menu">
-                            <md-icon class="lnr" md-font-icon="lnr-cross" style="font-size: 32px; height: 32px"></md-icon>
-                        </md-button>
-                        <md-button aria-label="contact">Contact</md-button>
-                        <md-button aria-label="about">About</md-button>
-                        <md-button aria-label="blog">Blog</md-button>
-                        <md-button aria-label="hex">Hex</md-button>
-                        <md-button aria-label="hive">Hive</md-button>
-                        <div class="filler" flex></div>
-                        <md-button aria-label="home">Home</md-button>
-                    </md-fab-actions>
-                </md-toolbar>
-            </md-fab-toolbar>
+<section class="nav margin" layout="row" layout-align="center stretch">
+    <div class="container" layout="column" flex-gt-sm="100" layout-align="stretch center">
+        <div class="row" layout="column" layout-fill>
+            <md-toolbar class="nav-menu md-menu-toolbar layout-padding md-shadow-bottom-z-1" md-scroll-shrink>
+                <div class="md-toolbar-tools">
+                    <a class="logo" href="/" style="height: 100%">
+                        <img src="images/horizontal-logo-final-small1.png" height="100%"/>
+                    </a>
+                    <span class="filler" flex></span>
+                    <md-button aria-label="home">Home</md-button>
+                    <md-button aria-label="contact">Contact</md-button>
+                    <md-button aria-label="blog">Blog</md-button>
+                    <md-button class="md-raised md-primary" aria-label="buy a hex">Buy a Hex!</md-button>
+                </div>
+            </md-toolbar>
         </div>
     </div>
 </section>
