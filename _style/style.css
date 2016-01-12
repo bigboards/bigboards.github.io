@@ -92,3 +92,40 @@ a:focus {
 .padding {
     padding: 0 !important
 }
+
+.md-button.very-small-text {
+    font-size: 10px;
+}
+
+.md-button.small-text {
+    font-size: 12px;
+}
+
+.md-button.small-text.letter-spacing {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.img-white {
+    filter: brightness(0) invert(1);
+}
+
+.shaded {
+    color: rgba(255,255,255,0.12)
+}
+
+.layout-margin-right {
+    margin-right: 8px;
+}
+
+.layout-margin-left {
+    margin-left: 8px;
+}
+
+.layout-margin-top {
+    margin-top: 8px;
+}
+
+.layout-margin-bottom {
+    margin-bottom: 8px;
+}

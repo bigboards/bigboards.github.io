@@ -15,6 +15,7 @@
     function theme($mdThemingProvider) {
         var bbPrimary = $mdThemingProvider.extendPalette('teal', {
             '500': '00aaaa'
+//            'A200': '00aaaa'
         });
         $mdThemingProvider.definePalette('bbPrimary', bbPrimary);
 
