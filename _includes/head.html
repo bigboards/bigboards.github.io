@@ -7,32 +7,19 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ page.description }}">
-    <meta name="keywords" content="BigBoards, clusters, big data, data science, hadoop, spark, deployment, provisioning, learn">
-    <meta name="author" content="{{ page.author }}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:url" content="{{ page.base_url }}">
-    <meta property="og:site_name" content="{{ page.name }}">
-    <meta property="og:locale" content="{{ page.locale }}">
-    <meta name="twitter:site" content="{{ page.twitter }}">
-    <meta name="twitter:card" content="{{ page.twitter_card }}">
-
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Collections is not Jekyll's best feature -->
     {% for c in site.collections %}
         {% if c[0] == 'style' %}
-            <!-- {{ c[0] }} processing -->
+             <!-- {{ c[0] }} processing -->
             <!-- BigBoards style -->
             {% for s in c[1].files %}
                 <link rel="stylesheet" type="text/css" href="{{ s.path | remove_first:'_' }} ">
             {% endfor %}
         {% else %}
-            <!-- {{ c[0] }} skipping -->
+             <!-- {{ c[0] }} skipping -->
         {% endif %}
     {% endfor %}
 
@@ -52,5 +39,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    {% seo %}
 
 </head>
