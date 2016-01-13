@@ -3,18 +3,16 @@
     padding-bottom: 95px;
 
     /* TODO Should be styled with angular-material? */
-    background-color: #545454;
-    color: #FFFFFF
+    background-color: rgb(84,84,84);
+    color: rgb(255,255,255)
 }
 
 a {
-    /* color: #00aaaa; */
     outline: none;
     text-decoration: none;
 }
 a:hover,
 a:focus {
-    /*color: #00aaaa;*/
     outline: none;
     text-decoration: none;
 }
@@ -129,3 +127,83 @@ a:focus {
 .layout-margin-bottom {
     margin-bottom: 8px;
 }
+
+/* parallax from http://keithclark.co.uk/articles/practical-css-parallax/ */
+@media screen and (min-width: 40em) {
+    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+        html, body {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        body {
+            transform: translateZ(0px);
+        }
+
+        .parallax {
+            /*position: absolute;*/
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 300px;
+            perspective-origin: 100% 100%;
+        }
+        .parallax__group, .parallax__content {
+            transform-style: preserve-3d;
+            transform: translateZ(0);
+        }
+        .parallax__back {
+            transform: translateZ(-150px) scale(1.5);
+            transform-origin: 100% 100%;
+        }
+        .parallax__deep {
+            transform: translateZ(-200px) scale(3);
+            transform-origin: 100% 100%;
+        }
+        .parallax__back, .parallax__deep {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.fancy-header {
+    color: rgb(255,255,255);
+    background: rgb(0,0,0);
+    padding: 0px 12px 0px 12px;
+    text-transform: none;
+}
+
+h2.fancy-header {
+    font-size: 250%;
+    font-weight: normal;
+}
+
+.fancy-header > strong {
+    color: rgb(0,170,170);
+}
+
+.dark {
+    background-color: rgb(84,84,84);
+    color: rgb(255,255,255);
+}
+
+.interlude:after {
+    content:'';
+    border-top: solid 35px rgb(84,84,84);
+    border-left: solid 35px transparent;
+    border-right: solid 35px transparent;
+}
+
+.interlude h2 {
+    font-size: 200%;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.8);
+}
+
