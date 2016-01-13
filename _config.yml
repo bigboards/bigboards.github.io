@@ -9,7 +9,7 @@ defaults:
     values:
       description: "Clusters made easy!"
       keywords: "clusters, big data, data science, hadoop, spark, deployment, provisioning, learn"
-      layout: "default"
+      layout: "post"
       base_url: "http://bigboards.io"
       author: "BigBoards"
       twitter: "@bigboardsio"

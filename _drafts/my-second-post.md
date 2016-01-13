@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My 2nd Blog Post
 ---
 You'll find this post in your `_drafts` directory. Go ahead and edit it and re-build

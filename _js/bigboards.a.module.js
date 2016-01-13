@@ -8,11 +8,13 @@
             'ngMaterial',
             'ngRoute'
         ])
-        .config(theme);
+        .config(config);
 
-    theme.$inject = ['$mdThemingProvider'];
+    config.$inject = ['$mdThemingProvider', '$locationProvider'];
 
-    function theme($mdThemingProvider) {
+    function config($mdThemingProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
+
         var bbPrimary = $mdThemingProvider.extendPalette('teal', {
             '500': '00aaaa'
 //            'A200': '00aaaa'
