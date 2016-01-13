@@ -7,6 +7,10 @@
     color: rgb(255,255,255)
 }
 
+p, .desc {
+    text-align: justify;
+}
+
 a {
     outline: none;
     text-decoration: none;
@@ -199,11 +203,49 @@ h2.fancy-header {
     border-left: solid 35px transparent;
     border-right: solid 35px transparent;
 }
-
 .interlude h2 {
+    letter-spacing: 1px;
     font-size: 200%;
     font-weight: normal;
     text-transform: uppercase;
     color: rgba(255,255,255, 0.8);
 }
 
+h2 {
+    font-size: 250%;
+    font-weight: normal;
+}
+
+h2.section-header > strong {
+    color: rgb(0,170,170);
+}
+
+.round {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+
+.icon-box {
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+.icon-wrapper > .md-button {
+    width: 110px !important;
+    height: 110px !important;
+}
+
+.icon-wrapper > .md-button > md-icon {
+    font-size: 64px;
+    height: 64px;
+}
+
+.icon-desc > h4 {
+    font-weight: normal;
+    font-size: 125%;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
