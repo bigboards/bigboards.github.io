@@ -3,9 +3,8 @@ title: BigBoards
 description: Clusters made easy
 layout: view
 ---
-<section class="parallax">
-    <div class="parallax-back" style="background-image: url('/images/pictures/DSCF9104-e1410294927355.jpg')"></div>
-    <div class="parallax-content" layout="row" layout-align="center stretch">
+<section style="background-image: url('/images/pictures/DSCF9104-e1410294927355.jpg')">
+    <div layout="row" layout-align="center stretch">
         <div layout="column" flex-gt-sm="85" layout-align="center center"
              style="margin-top: 230px; margin-bottom: 230px">
             <h2 class="fancy-header">
@@ -25,16 +24,22 @@ layout: view
     </div>
 </section>
 
-<section layout="row" layout-align="center stretch">
+<section class="top-shadow" layout="row" layout-align="center stretch">
     <div layout="row" flex-gt-sm="85" layout-align="center stretch" style="margin-top: 0px; margin-bottom: 35px">
-        <img flex="50" src="/images/pictures/Hex-1.01.png"/>
+        <img flex="50" src="/images/pictures/Hex-1.01.png" alt="The BigBoards Hex is a small 6-node computer cluster that just sits on your desk"/>
         <div flex layout="column" layout-align="start start" style="height: 100%">
             <h2 class="section-header">BigBoards<strong>HEX</strong></h2>
-            <p>Your Hex is a <strong>portable cluster</strong> that sits on your desk! But beware: its sleek design
-                hides a full-blown data center - right at your fingertips! Fully <strong>pre-assembled</strong> by us,
-                so you can concentrate not on the hardware but on your data.</p>
-            <p>Your Hex is by far <strong>the most productive</strong> learning and development platform for Big Data.
-                Getting started is as <strong>easy as 1-2-3</strong> ...</p>
+            <h3>Your Hex is a <strong>portable cluster</strong> that sits on your desk!</h3>
+
+            <p>But beware: its sleek design
+                hides a full-blown <strong>micro data center</strong> - right at your fingertips! 6 computers
+                in a small box, fully <strong>pre-assembled</strong> by BigBoards. That way you can concentrate, not
+                on the hardware, but on your data.</p>
+
+            <p>Your Hex is by far <strong>the most productive</strong> learning and development platform for
+                big data engineering and data science.</p>
+
+            <p>Getting started is as <strong>easy as 1-2-3</strong> ...</p>
 
             <div layout="column" style="margin-top: 40px">
                 <div class="icon-box" layout="row" layout-align="stretch stretch">
@@ -45,6 +50,7 @@ layout: view
                     </div>
                     <div class="icon-desc" layout="column" style="margin-left: 25px">
                         <h4 class="no-margin-top">1. Connect power and network</h4>
+
                         <div class="desc">To boot your Hex, you have to plug it to a wall outlet and hook it up to your
                             network to provide access from your computer.
                         </div>
@@ -52,12 +58,13 @@ layout: view
                 </div>
                 <div class="icon-box" layout="row" layout-align="stretch stretch">
                     <div class="icon-wrapper" flex="25" layout="column" layout-align="start start">
-                        <md-button class="md-fab md-primary margin" aria-label="power">
+                        <md-button class="md-fab md-primary md-button-hover margin" aria-label="power">
                             <md-icon class="lnr" md-font-icon="lnr-equalizer"></md-icon>
                         </md-button>
                     </div>
                     <div class="icon-desc" layout="column" style="margin-left: 25px">
                         <h4 class="no-margin-top">2. Browse to integrated tools</h4>
+
                         <div class="desc">Our integrated tools help you to monitor your Hex and completely administer
                             your device from our dashboards!
                         </div>
@@ -71,8 +78,9 @@ layout: view
                     </div>
                     <div class="icon-desc" layout="column" style="margin-left: 25px">
                         <h4 class="no-margin-top">3. Install any big data tint from our library</h4>
+
                         <div class="desc">Tints are pre-packaged technologies, open datasets or tutorials. By the click
-                            of a botton in our dashboard, tints are downloaded, installed and configured within minutes.
+                            of a botton in our dashboard, tints are downloaded and installed within minutes.
                             That means you can just work on your data!
                         </div>
                     </div>
@@ -92,8 +100,44 @@ layout: view
     </div>
 </section>
 
-<section>
+<section layout="row" layout-align="center center">
+    <div layout="row" flex-gt-sm="85" layout-align="center stretch" style="margin-top: 0px; margin-bottom: 0px">
+        <div flex layout="column" layout-align="start stretch">
+            <h2 class="section-header">BigBoards<strong>Library</strong></h2>
 
+            <h3>It's like the app store on your smartphone</h3>
+
+            <p>Browse to the library on your Hex and just <strong>point and click</strong> to download
+                and install the tint of your choice ... in a matter of minutes instead of days or weeks.</p>
+
+            <p>Tints are pre-packaged <strong>technologies</strong>, (open) <strong>datasets</strong> or <strong>tutorials</strong>.
+                The Tint's specific tools and panels integrate seemlessly with your Hex's dashboards.</p>
+            <p>Everything at
+                your fingertips from 1 well-defined location: your Hex</p>
+        </div>
+        <div flex="50" style="margin-top: 32px; margin-left: 32px; overflow: visible; height: 521px">
+            <img src="/images/jason-lib-cropped.png" alt="The BigBoards library is a web page that functions like the appstore on your smartphone."/>
+        </div>
+    </div>
 </section>
 
+<section class="grey" layout="row" layout-align="center center">
+    <div layout="column" flex-gt-sm="85" layout-align="center center" style="margin-top: 0px; margin-bottom: 35px">
+        <h2 class="section-header">The<strong>features</strong></h2>
+        <h3>... that make you productive with data</h3>
+        <p>Your BigBoards Hex is your portable cluster, that sits on your desk! Let us take care of the infrastructure
+            through the dashboard and operational tools that come pre-installed on your Hex. Let us take care of
+            the provisioning of software, data and tutorials via the library. You should not have to worry about the
+            hardware and provisioning. You should be able to focus only on building your solutions and mining your data.</p>
+
+        <p>Unpack your Hex, connect it to power and to the internet; then boot. Our integrated tools allow you to
+            monitor, operate and provision your Hex, so you can access its full potential.
+            The Tint Library is like the app store on your smartphone: download and install any new big data stack by
+            just 1 click on a button. </p>
+
+        <p class="big-text uppercase-text letter-spacing">Your BigBoards Hex is the most <strong>productive tool</strong> to do data science or to learn, experiment or develop for big data.</p>
+
+        <md-button ng-href="orderprototype" class="btn-cta md-primary md-raised">I ❤ buy a Hex!</md-button>
+    </div>
+</section>
 

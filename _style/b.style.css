@@ -1,3 +1,28 @@
+body {
+    line-height: 24px;
+}
+
+h2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    /*font-weight: bold;*/
+    letter-spacing: 1px;
+    font-size: 150%;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+strong {
+    font-weight: bold;
+}
+
 .footer {
     padding-top: 95px;
     padding-bottom: 95px;
@@ -178,7 +203,7 @@ a:focus {
 .fancy-header {
     color: rgb(255,255,255);
     background: rgb(0,0,0);
-    padding: 0px 12px 0px 12px;
+    padding: 12px 12px 12px 12px;
     text-transform: none;
 }
 
@@ -189,6 +214,10 @@ h2.fancy-header {
 
 .fancy-header > strong {
     color: rgb(0,170,170);
+}
+
+.grey {
+    background: rgb(248,248,248)
 }
 
 .dark {
@@ -203,6 +232,7 @@ h2.fancy-header {
     border-right: solid 35px transparent;
 }
 .interlude h2 {
+    margin-bottom: 32px;
     letter-spacing: 1px;
     font-size: 200%;
     font-weight: normal;
@@ -217,6 +247,7 @@ h2 {
 
 h2.section-header > strong {
     color: rgb(0,170,170);
+    text-transform: uppercase;
 }
 
 .round {
@@ -244,7 +275,19 @@ h2.section-header > strong {
 .icon-desc > h4 {
     font-weight: normal;
     font-size: 125%;
-    letter-spacing: 1px;
-    margin-top: 8px;
     margin-bottom: 8px;
+}
+
+.btn-cta {
+    font-size: 56px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-top: 72px !important;
+    margin-bottom: 36px !important;
+}
+
+.top-shadow {
+
 }
