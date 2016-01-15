@@ -3,6 +3,8 @@ body {
 }
 
 h2 {
+    font-size: 250%;
+    font-weight: normal;
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -21,6 +23,10 @@ p {
 
 strong {
     font-weight: bold;
+}
+
+section {
+    background-size: cover;
 }
 
 .footer {
@@ -238,11 +244,6 @@ h2.fancy-header {
     font-weight: normal;
     text-transform: uppercase;
     color: rgba(255,255,255, 0.8);
-}
-
-h2 {
-    font-size: 250%;
-    font-weight: normal;
 }
 
 h2.section-header > strong {
